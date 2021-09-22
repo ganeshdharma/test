@@ -1,0 +1,11 @@
+name: Testing
+on: push
+
+jobs:
+  test_project:
+   
+    steps:
+    - uses: actions/checkout@v2
+      run: |
+        
+        python3 calculator.py test
